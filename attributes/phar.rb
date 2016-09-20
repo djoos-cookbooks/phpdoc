@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdoc
 # Attributes:: phar
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 default['phpdoc']['phar_url'] = 'http://phpdoc.org/phpDocumentor.phar'
