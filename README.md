@@ -1,22 +1,22 @@
-[![Build Status](https://secure.travis-ci.org/escapestudios-cookbooks/phpdoc.png)](http://travis-ci.org/escapestudios-cookbooks/phpdoc)
+[![Build Status](https://travis-ci.org/djoos-cookbooks/phpdoc.png)](http://travis-ci.org/djoos-cookbooks/phpdoc)
 
-Description
-===========
+# phpdoc cookbook
+
+## Description
 
 This cookbook provides an easy way to install phpdoc, PHP Documentor.
 
 More information?
 http://www.phpdoc.org/
 
-Requirements
-============
+## Requirements
 
-## Cookbooks:
+### Cookbooks:
 
 * php
 * composer
 
-## Platforms:
+### Platforms:
 
 * Ubuntu
 * Debian
@@ -26,33 +26,31 @@ Requirements
 * Scientific
 * Amazon
 
-Attributes
-==========
+## Attributes
 
 * `node['phpdoc']['install_method']` - Installation method, "pear", "composer" or "phar", defaults to "pear"
 * `node['phpdoc']['version']` - The phpdoc version that will be installed, defaults to "latest"
 * `node['phpdoc']['prefix']` - The composer.json bin-dir, defaults to "/usr/bin" (composer install method only)
 
-Usage
-=====
+## Usage
 
 1) include `recipe[phpdoc]` in a run list
-2)
-	change the attributes
-	--- OR ---
-	override the attribute on a higher level (http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
+2) change the attributes
+--- OR ---
+[override the attribute on a higher level](http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
 
-References
-==========
+## References
 
 * [phpdoc home page] (http://www.phpdoc.org/)
 
-License and Authors
-===================
+## License and Authors
+
+Author: David Joos <development@davidjoos.com>
+Copyright: 2016, David Joos
 
 Author: David Joos <david.joos@escapestudios.com>
 Author: Escape Studios Development <dev@escapestudios.com>
-Copyright: 2013-2014, Escape Studios
+Copyright: 2013-2015, Escape Studios
 
 Unless otherwise noted, all files are released under the MIT license,
 possible exceptions will contain licensing information in them.

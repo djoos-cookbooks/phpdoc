@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdoc
 # Recipe:: composer
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 include_recipe 'composer'
@@ -17,11 +17,11 @@ directory phpdoc_dir do
 end
 
 # figure out what version to install
-if node['phpdoc']['version'] != 'latest'
-  version = node['phpdoc']['version']
-else
-  version = '*.*.*'
-end
+version = if node['phpdoc']['version'] != 'latest'
+            node['phpdoc']['version']
+          else
+            '*.*.*'
+          end
 
 # composer.json
 template "#{phpdoc_dir}/composer.json" do
