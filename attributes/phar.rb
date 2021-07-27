@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: phpdoc
+# Cookbook:: phpdoc
 # Attributes:: phar
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 default['phpdoc']['phar_url'] = 'http://phpdoc.org/phpDocumentor.phar'

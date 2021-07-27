@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: phpdoc
+# Cookbook:: phpdoc
 # Recipe:: default
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 # install XSLTProcessor
